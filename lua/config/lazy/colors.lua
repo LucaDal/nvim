@@ -2,8 +2,8 @@ function ColorMyPencils(color)
 	color = color or "rose-pine-moon"
 	vim.cmd.colorscheme(color)
 
-	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+--	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+--	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 end
 
 return {
@@ -57,7 +57,7 @@ return {
                 -- your configuration comes here
                 -- or leave it empty to use the default settings
                 style = "storm", -- The theme comes in three styles, `storm`, `moon`, a darker variant `night` and `day`
-                transparent = true, -- Enable this to disable setting the background color
+                transparent = false, -- Enable this to disable setting the background color
                 terminal_colors = true, -- Configure the colors used when opening a `:terminal` in Neovim
                 styles = {
                     -- Style to be applied to different syntax groups
@@ -77,7 +77,7 @@ return {
         name = "rose-pine",
         config = function()
             require('rose-pine').setup({
-                disable_background = true,
+                disable_background = false,
                 styles = {
                     italic = false,
                 },

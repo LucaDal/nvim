@@ -1,4 +1,5 @@
 return {
+    -- this cofiguration lists all functions in a file
     'stevearc/aerial.nvim',
     opts = {},
     -- Optional dependencies
@@ -15,7 +16,7 @@ return {
                 vim.keymap.set("n", "}", "<cmd>AerialNext<CR>", { buffer = bufnr, desc = 'Jump backwards symbols' })
             end,
         })
-        -- You probably also want to set a keymap to toggle aerial
-        vim.keymap.set("n", "<leader>a", "<cmd>AerialToggle!<CR>")
+        -- You probably also bant to set a keymap to toggle aerial
+        vim.keymap.set("n", "<leader>a", "<cmd>AerialToggle!<CR>", {desc = '[A]erial: Functions view'})
     end
 }
