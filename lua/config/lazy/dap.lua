@@ -33,7 +33,7 @@ return {
             remap = false,
         },
         {
-            "<leader>dc",
+            "<F5>",
             function()
                 require("dap").continue()
             end,
@@ -42,7 +42,7 @@ return {
             remap = false,
         },
         {
-            "<leader>di",
+            "<F7>",
             function()
                 require("dap").step_into()
             end,
@@ -51,7 +51,7 @@ return {
             remap = false,
         },
         {
-            "<leader>do",
+            "<F6>",
             function()
                 require("dap").step_over()
             end,
